@@ -50,6 +50,7 @@ while cv2.waitKey(1) != ord('q'):
         image_num += 1
 
 
+
     if cv2.waitKey(1) == ord('p'):
         
         
@@ -61,14 +62,18 @@ while cv2.waitKey(1) != ord('q'):
 
         cv2.imshow('ALL', all) 
         
+
+
     if cv2.waitKey(1) == ord('k'):
         print("k")
         Identity = np.array([[1,1,1],[1,0,1],[1,1,1]])
         a = cv2.filter2D(a,-1,Identity)
     
+
+
     if cv2.waitKey(1) == ord('u'):
         img4 = cv2.imread("C:/Users/legi1/Documents/GitHub/Ximea_camera/save/img3.jpg")
-        rotated = img4.copy()
+        rotated = img4.copy
         print("start")
 
         x, y, _ = img4.shape
@@ -79,6 +84,21 @@ while cv2.waitKey(1) != ord('q'):
 
         print("end")
         img4 = rotated
+        cv2.waitKey(0)
+
+
+    if cv2.waitKey(1) == ord("r"):
+        img3 = c
+        red = np.array(img3)
+        print("start")
+
+
+        red[:, :, 0] = 0
+        red[:, :, 1] = 0
+
+
+        print("end")
+        c = red
         cv2.waitKey(0)
                 
  
